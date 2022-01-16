@@ -1,0 +1,60 @@
+
+/*Header*/
+.silder-single {
+	width: 100%;
+	background: #807e13;
+	box-sizing: border-box;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.slider-single-full h2 {
+	font-size: 40px;
+	color: #fff;
+	font-weight: 900;
+	margin-bottom: 10px;
+}
+.slider-single-full p {
+	font-size: 18px;
+}
+.slider-single-1 {
+	background: #185f9d;
+}
+.slider-single-full a {
+	display: inline-block;
+	padding: 20px 40px;
+	background: #fff;
+	color: #333;
+	text-transform: uppercase;
+	margin-top: 25px;
+	text-decoration: none;
+	-webkit-transition:all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	border-radius: 50px;
+}
+.slider-single-full a:hover {
+	background: #fb5b0d;
+	color: #fff;
+}
+/*Animation*/
+.active .silder-single h2, .active .silder-single a, .active .silder-single p{
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.active .silder-single p{
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+.active .silder-single a {
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
